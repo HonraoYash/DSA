@@ -1,6 +1,7 @@
 class Solution:
     def findPath(self, grid):
         #your code goes here
+        """ Only one way of solving this problem is by using a recursive function to explore all possible paths."""
         n = len(grid)
         res = []
         vis = [[0]*n for _ in range(n)]

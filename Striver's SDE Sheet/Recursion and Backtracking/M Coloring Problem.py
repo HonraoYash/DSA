@@ -2,6 +2,7 @@ from collections import defaultdict
 
 class Solution:
     def graphColoring(self, edges, m, n):
+        """ Only one way of solving this problem is by using a recursive function to explore all possible colors."""
         adj = defaultdict(list)
         for i,j in edges:
             adj[i].append(j)

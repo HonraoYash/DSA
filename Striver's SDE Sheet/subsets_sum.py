@@ -60,7 +60,7 @@ class Solution:
         # Space Complexity - O(N)  (Auxiliary space of N needed at worst case to store all elements in arr) 
         # + O(N*2^N)(for storing output)
 
-        """ Another Approach: Using Iterative Approach """
+        """ Another Approach: Using Iterative Approach 
         res = []
         for i in range(2**m):
             track = []
@@ -72,7 +72,8 @@ class Solution:
         # Time Complexity - O(N * 2^N) (branching factor is 2 - include and exclude)
         # Space Complexity - O(N)  (Auxiliary space of N needed at worst case to store all elements in arr) 
         # + O(N*2^N)(for storing output)
-        """ Another Approach: Using Dynamic Programming """
+        """
+        """ Another Approach: Using Dynamic Programming 
         dp = [[False]*(target+1) for _ in range(m+1)]
         for i in range(m+1):
             dp[i][0] = True
@@ -93,3 +94,4 @@ class Solution:
         # and we are using a or statement to check if the current element is less than or equal to the target sum
         # and we are using a else statement to check if the current element is greater than the target sum
         # and we are using a return statement to return the result
+        """

@@ -1,3 +1,6 @@
+""" Rule - Binary Search is not only used to find a number in an array, but it can 
+be used on any monotonically increasing or decreasing function. """
+
 class Solution:
     def NthRoot(self, n, m):
         """ We do a Binary search on the answer space [1, m]. 

@@ -78,6 +78,11 @@ class Solution:
         """ Optimal Solution: If the array contains only positive and zero elements.
         If the array contains only positive and zero elements, we can use a two pointer and 
         greedy approach to find the largest subarray with the sum equal to K. 
+        Keep incrementing the right pointer and accumulating the sum, until the sum is less than or equal to K.
+        If the sum is equal to K, update the longest subarray length.
+        If the sum is greater than K, decrement the left pointer and subtract the value at the left pointer from the sum.
+        Keep incrementing the right pointer and accumulating the sum, until the right pointer is less than the length of the array.
+        Return the longest subarray length.
         """
         left, right = 0, 0
         longest = 0

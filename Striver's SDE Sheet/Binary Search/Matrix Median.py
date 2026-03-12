@@ -52,8 +52,8 @@ class Solution:
         return low
 
     def helperfunction(self, matrix, mid):
-        count = 0
-        for i in range(n):
+        cnt = 0
+        for i in range(mid):
             cnt += self.upper_bound(matrix[i], mid)
         return cnt
 

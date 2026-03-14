@@ -12,14 +12,15 @@ class Solution:
             # and we are using a heap to store the elements of the arrays
             # and we are using a return statement to return the result
             # and we are using a return statement to return the result
+            This approach also takes O(k^2 * log(k)) time, but takes O(k^2) axuiliary space, because we store all the elements in the heap.
         """
-        # heap = [arr[i][j] for i in range(k) for j in range(k)]
-        # heapq.heapify(heap)                          
+        heap = [arr[i][j] for i in range(k) for j in range(k)]
+        heapq.heapify(heap)                          
 
-        # res = []
-        # while heap:
-        #     res.append(heapq.heappop(heap))
-        # return res
+        res = []
+        while heap:
+            res.append(heapq.heappop(heap))
+        return res
         """ Optimal Solution - Min Heap of size k
         
             Key Idea: Instead of pushing all elements into the heap upfront, we only push

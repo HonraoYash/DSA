@@ -5,10 +5,10 @@ class ArrayStack:
         self.stack.append(x)
 
     def pop(self):
-        return self.stack.pop()
+        return self.stack.pop() if self.stack else None
 
     def top(self):
-        return self.stack[-1]
+        return self.stack[-1] if self.stack else None
 
     def isEmpty(self):
         return not self.stack

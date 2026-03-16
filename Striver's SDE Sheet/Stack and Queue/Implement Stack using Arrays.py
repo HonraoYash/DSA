@@ -74,3 +74,7 @@ print(obj.isEmpty())
 print(obj.printStack())
 obj.clearStack()
 print(obj.printStack())
+
+""" We have implemented the stack using arrays, the only disadvantage is that we need to know the size of the array upfront. It's not dynamic in nature. 
+    If we want to implement a dynamic stack, we have to use a linked list.
+"""

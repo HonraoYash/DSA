@@ -11,6 +11,8 @@ def nextSmallerElements(arr):
                 nse.append(stack[-1])
             stack.append(arr[i])
         return nse[::-1]
-
+        # Time Complexity: O(2N)
+        # Space Complexity: 0(N)(for stack) and O(N)(for nse)
+        
 arr = [1, 2, 3, 4, 5]
 print(nextSmallerElements(arr))

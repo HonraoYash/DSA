@@ -51,7 +51,7 @@ class Solution:
             Space Complexity: O(1)
         """
         top, bottom = 0, len(M) - 1
-        while top < bottom:
+        while top < bottom:          # Basically we just eliminate the candidates one by one, and the last remaining candidate might be a celebrity.
             if M[top][bottom] == 1:
                 top += 1
             elif M[bottom][top] == 1:
@@ -63,7 +63,7 @@ class Solution:
         if top > bottom:
             return -1
 
-        for i in range(len(M)):
+        for i in range(len(M)):      # This is to check that the candidate which we found above is actually a celebrity.
             if i == top:
                 continue
             if M[top][i] == 1 or M[i][top] == 0:

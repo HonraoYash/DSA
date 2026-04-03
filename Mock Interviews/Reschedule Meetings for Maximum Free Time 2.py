@@ -53,7 +53,7 @@ class Solution:
         if startTime[0] != 0:
             freeTimes.append(startTime[0])
 
-        for meeting in range(1,len(startTime)):
+        for i in range(1,len(startTime)):
             freeTimes.append(endTime[i] - startTime[i-1])
 
         if endTime[-1] != eventTime:
